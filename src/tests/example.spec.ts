@@ -1,4 +1,8 @@
-import { test, expect } from '@playwright/test';
+// Use this line and `Show browser` (From the VS Code extension) will work as expected
+// import { test, expect } from '@playwright/test';
+
+// Use this line and `Show browser` will no longer work
+import { test, expect } from '../run-with-adblock';
 
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
